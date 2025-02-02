@@ -56,23 +56,23 @@ https://www.tinkercad.com/things/3uRDqUS0d7I-askprojekt2?sharecode=PXTgYRAD4aL4z
 ## Opis kodu
 
 ### Tablice pinów
-pirPins[], buttonPins[], ledPins[] – przechowują numery pinów odpowiadających czujnikom PIR, przyciskom oraz diodom LED.
+• pirPins[], buttonPins[], ledPins[] – przechowują numery pinów odpowiadających czujnikom PIR, przyciskom oraz diodom LED.
 
 ### Inicjalizacja
-W funkcji setup() definiowane są tryby pracy pinów: jako wejścia (czujniki, przyciski) lub wyjścia (diody, rejestr przesuwny).
-Aktywowany zostaje port szeregowy do monitorowania zdarzeń.
+• W funkcji setup() definiowane są tryby pracy pinów: jako wejścia (czujniki, przyciski) lub wyjścia (diody, rejestr przesuwny).
+• Aktywowany zostaje port szeregowy do monitorowania zdarzeń.
 
 ### Obsługa przycisków
-W pętli loop() stan przycisków jest odczytywany za pomocą digitalRead().
-Naciśnięcie przycisku zmienia status czujnika (aktywny/nieaktywny).
+• W pętli loop() stan przycisków jest odczytywany za pomocą digitalRead().
+• Naciśnięcie przycisku zmienia status czujnika (aktywny/nieaktywny).
 
 ### Wykrywanie ruchu
-Czujniki PIR monitorują obecność ruchu.
-Po wykryciu ruchu odpowiednia zmienna pirDetected[] zostaje ustawiona na true.
+• Czujniki PIR monitorują obecność ruchu.
+• Po wykryciu ruchu odpowiednia zmienna pirDetected[] zostaje ustawiona na true.
 
 ### Wyświetlanie na panelu LED
-Funkcja writeLED(byte data) przesyła dane do rejestru przesuwnego (74HC595), który steruje 7-segmentowym wyświetlaczem LED.
-Wartości w tablicy liczby[] odpowiadają cyfrom od 1 do 5.
+• Funkcja writeLED(byte data) przesyła dane do rejestru przesuwnego (74HC595), który steruje 7-segmentowym wyświetlaczem LED.
+• Wartości w tablicy liczby[] odpowiadają cyfrom od 1 do 5.
 
 ## Autor
 Michał Kurpiewski 21253
